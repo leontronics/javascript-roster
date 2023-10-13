@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 // Import the student routes
-const studentRoutes = require("../routes/routes");
+const studentRoutes = require("./routes/routes");
 
 // Middleware to enable Cross-Origin Resource Sharing
 app.use(cors());
