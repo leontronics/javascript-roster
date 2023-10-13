@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/students", studentRoutes);
 
 // Define the port the server will listen on
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Start the server and listen on the defined port
 app.listen(port, () => {
